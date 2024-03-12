@@ -52,7 +52,7 @@ jobs:
           images: |
              frandotidockeruser/testing
           tags: |
-            type=ref,enable=${{github.event_name == 'release'}},event=tag,prefix=${{github.ref.tags}}
+            type=ref,enable=${{github.event_name == 'release'}},event=tag,prefix=${{github.ref_name}}
 
       - name: Build Docker Image
         id: build-docker-image-step
