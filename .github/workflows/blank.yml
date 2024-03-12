@@ -58,6 +58,6 @@ jobs:
           images: |
              frandotidockeruser/testing
           tags: |
-            type=ref,enable=${{github.event_name == 'push'}},event=tag,prefix=hola
+            type=ref,enable=${{github.event_name == 'release'}},event=tag,prefix=hola
 
       
